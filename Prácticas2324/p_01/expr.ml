@@ -7,10 +7,12 @@
 1.25 *. 2.0;;
 (* - : float = 2.5 *)
 
-(* 2 - 2.0 *)
+(* 2 - 2.0 *) 
+(* Error de tipo porque no puede ser float *)
 (* Error : This expression has type float but an expression was expected of type int *)
 
 (* 3.0 + 2.0 *)
+(* Error de tipo por el +, debe ser +. *)
 (* Error: This expression has type float but an expression was expected of type int *)
 
 5/3;;
@@ -29,6 +31,7 @@ sqrt;;
 (* - : float -> float = <fun> *)
 
 (* sqrt 4;; *)
+(* Error de tipo, debe ser float el 4 *)
 (* Error: This expression has type int but an expression was expected of type float *)
 
 int_of_float;;
@@ -41,6 +44,7 @@ float_of_int;;
 (* - : bool = true *)
 
 (* int_of_float -2.9;; *)
+(* Error sintactico, tiene que tener entre paréntesis el número negativo *)
 (* Error: This expression has type float -> int but an expression was expected of type int *)
 
 int_of_float 2.1 + int_of_float (-2.9);;
@@ -116,6 +120,7 @@ String.length "longitud";;
 (* - : int = 8 *)
 
 (* "1999" + "1";; *)
+(* Error de tipo ya que no puede sumar dos strings *)
 (* Error: This expression has type string but an expression was expected of type int *)
 
 "1999" ^ "1";;
@@ -164,9 +169,10 @@ if 3 = 4 then 0 else 4;;
 (* - : int = 4 *)
 
 if 3 = 4 then "0" else "4";;
-(* - : string = 4 *)
+(* - : string = "4" *)
 
 (* if 3 = 4 then 0 else "4";; *)
+(* Error de tipo, deben ser del mismo tipo las dos salidas del if-else *)
 (* Error: This expression has type string but an expression was expected of type int *)
 
 (if 3 < 5 then 8 else 10) + 4;;
