@@ -10,7 +10,7 @@ Prácticas Paradigmas de Programación (curso 2022/23)
 - **Práctica 4:** *9'00*
 - **Práctica 6:** *10'00*
 - **Práctica 7:** *9'00*
-- **Práctica 8:** *7'00*
+- **Práctica 8:** *8'00*
 - **Práctica 9:** *10'00*
 - **Práctica 10:** *10'00*
 - **Práctica 11:** *9'00*
